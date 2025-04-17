@@ -1,0 +1,61 @@
+/* Imposta il contenitore della griglia */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tre colonne di uguale larghezza */
+    grid-template-rows: 150px 150px 150px; /* Altezza automatica per le righe */
+    gap: 20px; /* Spaziatura tra gli elementi */
+    padding: 20px; /* Spaziatura interna */
+}
+
+/* Stile per gli elementi della griglia */
+.grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#label-style {
+    font-size: 20px;
+    
+    
+    display: center;
+}
+
+.element {
+    background-color: aquamarine;
+    height: 150px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.element:nth-child(1) {
+    grid-column: 1 ; /* Occupa la prima e la seconda colonna */
+    grid-row: 1; /* Prima riga */
+}
+.element:nth-child(2) {
+    grid-column: 2 / 3; /* Occupa la seconda e la terza colonna */
+    grid-row: 1; /* Prima riga */
+}
+.element:nth-child(3) {
+    grid-column: 3 / 4; /* Occupa la prima e la seconda colonna */
+    grid-row: 1; /* Seconda riga */
+}
+.element:nth-child(4) {
+    grid-column: 1/4; /* Occupa la prima e la seconda colonna */
+    grid-row: 2; /* Seconda riga */
+}
