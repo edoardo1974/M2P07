@@ -99,16 +99,40 @@ body {
     grid-row: 2; /* Seconda riga */
 }
 .element:nth-child(7) {
-    grid-column: 1/4; /* Occupa la prima e la seconda colonna */
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
     grid-row: 3; /* Seconda riga */
+    height: 370px;
+    width: auto;
+}
+.element:nth-child(8) {
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
+    grid-row:   4; /* Seconda riga */
+    height: 100px;
+    width: auto;
+    padding: 0px 50px 0px 50px;
     
 }
+.element:nth-child(9) {
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
+    grid-row: 5; /* Seconda riga */
+    height: 200px;
+    width: auto;
+    padding: 0px 50px ;
+    text-align: center;  
+}
+
+.element:nth-child(10) {
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
+    grid-row: 6; /* Seconda riga */
+    height: 200px;
+    width: auto;
+    
+    text-align: center;
+}
+
 
 .element2 {
-    padding: 0px 120px 0px 120px;
-    
-    display: flex;
+    padding: 0px ; 
     justify-content: center;
-   
 }
 
