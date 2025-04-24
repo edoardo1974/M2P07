@@ -14,7 +14,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Tre colonne di uguale larghezza */
-    grid-template-rows: 150px 50px; /* Altezza automatica per le righe */
+    grid-template-rows: 150px 50px ; /* Altezza automatica per le righe */
     gap: 20px; /* Spaziatura tra gli elementi */
     padding: 20px; /* Spaziatura interna */
 }
@@ -129,6 +129,64 @@ body {
     
     text-align: center;
 }
+
+.element:nth-child(11) {
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
+    grid-row: 7; /* Seconda riga */
+    height: 100px;
+    width: auto;
+    
+    text-align: center;
+}
+
+.element:nth-child(12) {
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
+    grid-row: 8; /* Seconda riga */
+    height: 150px;
+    width: auto;
+    
+    text-align: center;
+}
+
+.element:nth-child(13) {
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
+    grid-row: 9; /* Seconda riga */
+    height: 150px;
+    width: auto;
+    text-align: left;
+}
+
+.element:nth-child(14) {
+    grid-column: 1 / 4; /* Occupa dalla prima alla terza colonna */
+    grid-row: 10; /* Seconda riga */
+    height: 20px;
+    width: auto;
+    
+}
+
+
+
+ul {
+    list-style: none; /* Rimuove i puntini */
+    padding: 0;       /* Rimuove il padding predefinito */
+    
+    background-color: rgb(157, 177, 189);
+    border: 1px solid #ccc; /* Bordo inferiore per separare gli elementi */
+    border-radius: 10px; /* Angoli arrotondati */
+    
+}
+
+ul li {
+    padding: 5px; /* Padding per gli elementi della lista */
+    
+    border-bottom: 1px solid #ccc; /* Bordo inferiore per separare gli elementi */
+    
+    border-color: white;
+    color: black;
+    
+}
+
+
 
 
 .element2 {
