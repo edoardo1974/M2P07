@@ -179,6 +179,64 @@ ul.no-background {
     display: flex;
 }
 
+@media screen and (max-width: 770px) {/*Características do Rodapé*/
+    .element:nth-child(1) {
+        grid-column: 1 ; 
+        grid-row: 1; 
+    }
+    .element:nth-child(2) {
+        grid-column: 2 / 3; 
+        grid-row: 1; 
+        display: none;
+    }
+    .element:nth-child(3) {
+    
+        grid-column: 3 / 4; 
+        grid-row: 1; 
+    }
 
+    #button-style1{
+        background-color: #007aff;      
+        color: white;                   
+        padding: 3px 8px;              
+        border: none;                   
+        border-radius: 4px;             
+        font-size: 15px;                
+        font-family: Arial, sans-serif;
+        font-weight: 300;               
+        cursor: pointer; 
+        height: 25px;
+        
+    }
+
+    #button-style2{
+        background-color: #858788;      
+        color: white;                  
+        padding: 3px 8px;              
+        border: none;                   
+        border-radius: 8px;             
+        font-size: 15px;                
+        font-family: Arial, sans-serif;
+        font-weight: 300;               
+        cursor: pointer; 
+        height: 25px;
+        
+    }
+    .element:nth-child(4) {
+    
+        grid-column: 1/2; 
+        grid-row: 2; 
+        
+    }
+    .element:nth-child(5) {
+        grid-column: 2/3; 
+        grid-row: 2; 
+    }
+    .element:nth-child(6) {
+        grid-column: 3/4; 
+        grid-row: 2; 
+    }
+    
+}
 
 
