@@ -1,16 +1,24 @@
 
+/* 
+    Este arquivo CSS define os estilos base para o body e para o container de grid.
 
+    - O seletor `body` define uma fonte sans-serif, remove as margens e o padding padrão,
+      garante que o body ocupe toda a altura da viewport e utiliza CSS Grid para o layout.
 
+*/
 body {
     font-family: Arial, sans-serif;
-    
     margin: 0;
     padding: 0;
     height: 100vh;
     display: grid;
 }
 
-
+/* 
+    - A classe `.grid-container` cria um layout em grid com três colunas iguais e duas linhas
+      (primeira linha: 150px, segunda linha: 50px), adiciona um espaçamento de 20px entre os itens do grid
+      e aplica um padding interno de 20px no container.
+*/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -20,19 +28,27 @@ body {
 }
 
 
+/* 
+    - A classe `.grid-item` define o estilo para os itens do grid, incluindo uma borda, padding e 
+    centralização do texto.
+*/
 .grid-item {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
 }
-
+/* 
+    - O seletor `h1` define o estilo para os títulos, incluindo tamanho da fonte, cor e margem.
+*/
 #label-style {
     font-size: 20px;
     display: flex;
     flex-direction: column;
 }
 
-
+/* 
+    - O seletor `h3` define o estilo para os subtítulos, incluindo tamanho da fonte, cor e margem.
+*/
 #button-style1{
     background-color: #007aff;      
     color: white;                   
@@ -44,9 +60,10 @@ body {
     font-weight: 500;               
     cursor: pointer; 
     height: 50px;
-    
 }
-
+/* 
+    - O seletor `h3` define o estilo para os subtítulos, incluindo tamanho da fonte, cor e margem.
+*/
 #button-style2{
     background-color: #858788;      
     color: white;                  
@@ -58,60 +75,69 @@ body {
     font-weight: 500;               
     cursor: pointer; 
     height: 50px;
-    
 }
 
-
+/* 
+    - A classe `.element` define o estilo para os elementos dentro do grid, incluindo altura, largura e centralização do conteúdo.
+*/
 .element {
-    
     height: 150px;
     width: auto;
     display: flex;
     justify-content: center;
-   
 }
 
 .element:nth-child(1) {
+    /*
+    Seleciona o primero elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 ; 
     grid-row: 1; 
 }
-.element:nth-child(2) {
+
+.element:nth-child(2) {/*
+    Seleciona o segundo elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 2 / 3; 
     grid-row: 1; 
 }
+
 .element:nth-child(3) {
-    
+    /*Seleciona o terzeiro elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 3 / 4; 
     grid-row: 1; 
 }
+
 .element:nth-child(4) {
-    
+    /*Seleciona o quarto elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1/2; 
     grid-row: 2; 
 }
 .element:nth-child(5) {
+    /*Seleciona o quinto elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 2/3; 
     grid-row: 2; 
 }
 .element:nth-child(6) {
+    /*Seleciona o sexto elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 3/4; 
     grid-row: 2; 
 }
 .element:nth-child(7) {
+    /*Seleciona o setimo elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row: 3; 
     height: 370px;
     width: auto;
 }
 .element:nth-child(8) {
+    /*Seleciona o oitavo elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row:   4; 
     height: 100px;
     width: auto;
     padding: 0px 50px 0px 50px;
-    
 }
 .element:nth-child(9) {
+    /*Seleciona o nono elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row: 5; 
     height: 200px;
@@ -121,6 +147,7 @@ body {
 }
 
 .element:nth-child(10) {
+    /*Seleciona o decimo elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row: 6; 
     height: 200px;
@@ -129,6 +156,7 @@ body {
 }
 
 .element:nth-child(11) {
+    /*Seleciona o decimo primeiro elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row: 7; 
     height: 100px;
@@ -137,6 +165,7 @@ body {
 }
 
 .element:nth-child(12) {
+    /*Seleciona o decimo segundo elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row: 8; 
     height: 150px;
@@ -145,6 +174,7 @@ body {
 }
 
 .element:nth-child(13) {
+    /*Seleciona o decimo terceiro elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row: 9; 
     height: 150px;
@@ -153,12 +183,14 @@ body {
 }
 
 .element:nth-child(14) {
+    /*Seleciona o decimo quarto elemento filho com a classe 'element' dentro do seu elemento pai.*/
     grid-column: 1 / 4; 
     grid-row: 10; 
     display: flex;  
 }
 
 ul {
+    /*Estilo para listas não ordenadas*/
     list-style: none; 
     padding: 0;       
     background-color: rgb(157, 177, 189);
@@ -166,20 +198,25 @@ ul {
     border-radius: 10px; 
 }
 
-ul li {
+ul li {/*Estilo para itens de lista*/
     padding: 5px; 
     border-bottom: 1px solid #ccc; 
     border-color: white;
     color: black;   
 }
 
-ul.no-background {
+ul.no-background {/*Estilo para listas sem fundo*/
     background-color: transparent; 
     border: transparent;
     display: flex;
 }
 
-@media screen and (max-width: 770px) {/*Características do Rodapé*/
+/* 
+    Media query para telas com largura máxima de 770px.
+    Esta seção contém estilos específicos para o rodapé,
+    garantindo aparência e responsividade em telas menores.
+*/
+@media screen and (max-width: 770px) {
     
 
     .element:nth-child(1) {
@@ -192,11 +229,9 @@ ul.no-background {
         grid-column: 2 / 3; 
         grid-row: 1; 
         height: 100px;
-        width: auto;
-        
+        width: auto; 
     }
     .element:nth-child(3) {
-    
         grid-column: 3 / 4; 
         grid-row: 1; 
     }
@@ -212,7 +247,6 @@ ul.no-background {
         font-weight: 300;               
         cursor: pointer; 
         height: 50px;
-        
     }
 
     #button-style2{
@@ -226,13 +260,10 @@ ul.no-background {
         font-weight: 300;               
         cursor: pointer; 
         height: 50px;
-        
     }
     .element:nth-child(4) {
-    
         grid-column: 1/2; 
         grid-row: 2; 
-        
     }
     .element:nth-child(5) {
         grid-column: 2/3; 
@@ -257,7 +288,6 @@ ul.no-background {
         width: auto;
         padding: 0px 50px 0px 50px;
         font-size: 13px;   
-        
     }
 
     .element:nth-child(9) {
@@ -303,7 +333,6 @@ ul.no-background {
         width: auto;
         text-align: right;
         font-size: 12px;
-        
     }
 
     .element:nth-child(14) {
@@ -316,32 +345,44 @@ ul.no-background {
     }
     }
 
-
-@media screen and (max-width: 420px) {/*Características do Rodapé*/
-
-   
-    
+    /* 
+    Media query para telas com largura máxima de 420px.
+    Esta seção contém estilos específicos para o rodapé,
+    garantindo aparência e responsividade em telas menores.
+    */
+    @media screen and (max-width: 420px) {
+    .grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px; 
+    grid-template-rows: 100px 30px 250px; 
+    gap: 20px; 
+    padding: 20px; 
+    }
+    /* 
+        Define o espaçamento (gap) entre os itens flex ou grid dentro da classe `.element` para 30px.
+        O uso de `!important` garante que esse valor sobrescreva outras declarações de gap.
+    */  .element {
+        gap: 30px !important;
+    }
 
     .element:nth-child(1) {
         grid-column: 1 ; 
         grid-row: 1; 
         height: 100px;
         width: auto;
-        display: none;
     }
+
     .element:nth-child(2) {
         grid-column: 2 / 3; 
         grid-row: 1; 
         height: 100px;
         width: auto;
         display: none;
-        
     }
+
     .element:nth-child(3) {
-    
         grid-column: 2/ 3; 
         grid-row: 1; 
-        
     }
 
     #button-style1{
@@ -355,7 +396,6 @@ ul.no-background {
         font-weight: 300;               
         cursor: pointer; 
         height: 50px;
-        
     }
 
     #button-style2{
@@ -369,64 +409,83 @@ ul.no-background {
         font-weight: 300;               
         cursor: pointer; 
         height: 50px;
-        
     }
     .element:nth-child(4) {
-    
-        grid-column: 1 ; 
-        grid-row: 3; 
+        grid-column: 1/2 ; 
+        grid-row: 2; 
         height: 50px;
         width: 100px;
-        
     }
+
     .element:nth-child(5) {
-        grid-column: 2 ; 
-        grid-row: 3; 
+        grid-column: 2/3 ; 
+        grid-row: 2; 
         height: 50px;
         width: 100px;
         gap: none;
     }
+
     .element:nth-child(6) {
-        grid-column: 3; 
-        grid-row: 3; 
+        grid-column: 3/4; 
+        grid-row: 2; 
         height: 50px;
         width: 100px;
     }
 
     .element:nth-child(7) {
-        grid-column: 1 ; 
-        grid-row: 6; 
-        height: 230px;
-        width: auto;
+        grid-column: 1/4 ; 
+        grid-row: 3; 
+        height: 200px;
+        width: 150px;
+        padding: 50px 50px;
     }
 
     .element:nth-child(8) {
         grid-column: 1 / 4; 
         grid-row:   4; 
-        height: 130px;
+        height: 100px;
         width: auto;
-        padding: 0px 50px 0px 50px;
-        font-size: 13px;   
-        
+        padding: 0px 20px 0px 20px;
+        font-size: 10px; 
+        text-align: center; 
     }
+    
 
     .element:nth-child(9) {
         grid-column: 1 / 4; 
         grid-row: 5; 
-        height: 150px;
+        display: flex;
+        height: 100px;
         width: auto;
-        padding: 0px 50px ;
         text-align: center; 
-        font-size: 13px;  
+        font-size: 9px;  
+        padding: 0 !important;
+    }
+
+    .element:nth-child(9) h3 {
+    height: auto;
+    width: 100%;
+    padding: 0 !important;
     }
 
     .element:nth-child(10) {
         grid-column: 1 / 4; 
         grid-row: 6; 
-        height: 150px;
+        height: 80px;
         width: auto;
         text-align: center;
-        font-size: 13px; 
+        font-size: 9px; 
+    }
+    /* 
+        Seleciona o décimo elemento filho com a classe 'element' e remove qualquer padding dos elementos <h3> e <img>
+         dentro dele.
+        O uso de '!important' garante que essa sobrescrita de padding tenha prioridade sobre outros estilos conflitantes.
+    */  .element:nth-child(10) h3 {
+    padding: 0 !important;
+    }
+
+    .element:nth-child(10) img {
+    padding: 0 !important;
     }
 
     .element:nth-child(11) {
@@ -435,7 +494,7 @@ ul.no-background {
         height: 80px;
         width: auto;
         text-align: center;
-        font-size: 13px; 
+        font-size: 10px; 
     }
     .element:nth-child(12) {
         grid-column: 1 / 4; 
@@ -449,18 +508,25 @@ ul.no-background {
     .element:nth-child(13) {
         grid-column: 1 / 4; 
         grid-row: 9; 
-        height: 150px;
+        height: 100px;
         width: auto;
         text-align: right;
-        font-size: 12px;
-        
+        font-size: 8px;
+        gap: 0px !important;
+    }
+
+     .element:nth-child(13) img {/*Seleciona o décimo terceiro elemento filho com a classe 'element' e 
+        remove qualquer padding dos elementos <img> dentro dele.*/
+    height: 80px;
+    width: auto;
+    padding: 0 !important;
     }
 
     .element:nth-child(14) {
         grid-column: 1 / 4; 
         grid-row: 10; 
         display: flex; 
-        font-size: 13px; 
+        font-size: 8px; 
         height: 50px;
         width: auto;
     }
